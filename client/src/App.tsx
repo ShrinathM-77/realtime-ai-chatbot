@@ -4,8 +4,9 @@ import { useWebSocket } from "./hooks/useWebSocket";
 
 function App() {
   const { messages, sendMessage, connected, loading } = useWebSocket(
-    "ws://localhost:5000"
-  );
+  "wss://realtime-ai-chatbot-tzw3.onrender.com"
+);
+
 
   return (
     <div className="h-screen flex items-center justify-center bg-gray-100">
